@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:background="#1d1d1d">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".Settings"
+    android:background="#1d1d1d">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Info"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_alignTop="@+id/button_back_settings"
+            android:layout_alignBottom="@+id/button_back_settings"
+            android:background="#454545"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"/>
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/buttonHelpSettings"
+            android:src="@android:drawable/ic_menu_help"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/button_settings"/>
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/button_back_settings"
+            android:src="@drawable/abc_ic_ab_back_holo_dark"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Like us on Facebook!"
+            android:id="@+id/textTitleFB"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/secondary_text_dark"
+            android:background="#2b2b2b"
+            android:layout_below="@+id/button_back_settings"
+            android:layout_alignRight="@+id/textTitlePP"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Donate! We are poor!"
+            android:id="@+id/textTitlePP"
+            android:layout_below="@+id/textTitleFB"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/secondary_text_dark"
+            android:background="#2b2b2b"
+            android:layout_alignParentRight="true"/>
+
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonFacebook"
+            android:layout_alignTop="@+id/textTitleFB"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:cropToPadding="false"
+            android:src="@drawable/facebook_launcher"/>
+
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonPayPal"
+            android:layout_alignTop="@+id/textTitlePP"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/imageButtonFacebook"
+            android:cropToPadding="true"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paypal_launcher"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/scribble_arrow"
+            android:layout_alignBottom="@+id/textTitleFB"
+            android:layout_toLeftOf="@+id/imageButtonFacebook"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/scribble_arrow"
+            android:layout_alignBottom="@+id/textTitlePP"
+            android:layout_toLeftOf="@+id/imageButtonPayPal"/>
+
+
+</RelativeLayout>
+</ScrollView>

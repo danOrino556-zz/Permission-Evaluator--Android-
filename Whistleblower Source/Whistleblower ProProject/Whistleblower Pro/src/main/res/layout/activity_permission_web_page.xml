@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".PermissionWebPageActivity">
+
+    <WebView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/webViewPermission"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/button_back_web"
+            android:src="@drawable/abc_ic_ab_back_holo_dark"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            />
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/button_settings_web"
+            android:layout_alignTop="@+id/button_back_web"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:scaleType="centerCrop"
+            />
+
+</RelativeLayout>

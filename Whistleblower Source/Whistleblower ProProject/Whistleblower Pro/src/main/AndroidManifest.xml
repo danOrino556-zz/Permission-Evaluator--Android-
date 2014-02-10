@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.threeAmigos.whistleblowerpro"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.DefaultSearch"
+            android:label="Whistleblower" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.DefaultSearchDetails"
+            android:label="@string/title_activity_default_search_details" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.DefaultSearchList"
+            android:label="@string/title_activity_default_search_list"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.ThreeAmigos"
+            android:label="@string/title_activity_three_amigos" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.LoadingActivity"
+            android:label="@string/title_activity_loading" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.PermissionWebPageActivity"
+            android:label="@string/title_activity_permission_web_page" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.LoadingActivitySearch"
+            android:label="@string/title_activity_loading_activity_search" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.FacebookWebPageActivity"
+            android:label="@string/title_activity_facebook_web_page" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.PayPalWebActivity"
+            android:label="@string/title_activity_pay_pal_web" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.ApplicationWebPage"
+            android:label="@string/title_activity_application_web_page" >
+        </activity>
+        <activity
+            android:name="com.threeAmigos.whistleblowerpro.DescriptionActivity"
+            android:label="@string/title_activity_description" >
+        </activity>
+    </application>
+
+</manifest>

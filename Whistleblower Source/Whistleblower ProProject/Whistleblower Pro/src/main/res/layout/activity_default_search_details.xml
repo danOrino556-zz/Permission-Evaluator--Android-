@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".DefaultSearchDetails"
+    android:background="#1d1d1d">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Details"
+            android:id="@+id/textTitleDetails"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/buttonSettingsDetailed"
+            android:layout_alignBottom="@+id/buttonSettingsDetailed"
+            android:background="#454545"
+            android:singleLine="false"
+            />
+
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/iconDetails"
+            android:paddingRight="5dp"
+            android:layout_alignTop="@+id/textAppName"
+            android:layout_alignRight="@+id/buttonSettingsDetailed"
+            android:scaleType="fitXY"/>
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/buttonBackDetails"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/abc_ic_ab_back_holo_dark"/>
+
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/buttonSettingsDetailed"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_info_details"/>
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/buttonHelpDetails"
+            android:src="@android:drawable/ic_menu_help"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/buttonSettingsDetailed"/>
+
+    <TextView
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:text="App Name"
+            android:id="@+id/textAppName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/buttonBackDetails"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_toLeftOf="@+id/iconDetails"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Play Rating"
+            android:id="@+id/textTitlePlayRating"
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/textAppName"
+            android:layout_alignLeft="@+id/textTitleRiskRating"
+            android:textColor="@android:color/secondary_text_dark"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Downloads"
+            android:id="@+id/textTitleDownloads"
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/textTitlePlayRating"
+            android:layout_alignLeft="@+id/textTitlePlayRating"
+            android:textColor="@android:color/secondary_text_dark"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Author"
+            android:id="@+id/textTitleAuthor"
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/textTitleDownloads"
+            android:layout_alignLeft="@+id/textTitleDownloads"
+            android:textColor="@android:color/secondary_text_dark"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cost"
+            android:paddingLeft="5dp"
+            android:id="@+id/textTitleCost"
+            android:layout_below="@+id/textTitleAuthor"
+            android:layout_alignLeft="@+id/textTitleAuthor"
+            android:textColor="@android:color/secondary_text_dark"/>
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewPermissions"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textTitlePermissions"
+            android:layout_alignLeft="@+id/textTitlePermissions"
+            android:divider="@drawable/abc_list_divider_holo_dark"
+            android:background="@drawable/abc_ab_solid_dark_holo"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Suspicious Permissions: "
+            android:paddingLeft="5dp"
+            android:id="@+id/textTitlePermissions"
+            android:layout_below="@+id/textTitleCost"
+            android:layout_alignLeft="@+id/textTitleCost"
+            android:textColor="@android:color/secondary_text_dark"/>
+
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButtonAppURL"
+            android:layout_below="@+id/iconDetails"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/google_play_launcher"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:layout_marginTop="9dp"
+            android:adjustViewBounds="false"
+            />
+
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:id="@+id/buttonDescription"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/imageButtonAppURL"
+            android:layout_alignParentRight="true"
+            android:textSize="10dp"/>
+
+
+</RelativeLayout>

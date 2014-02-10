@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight ="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".DescriptionActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Description"
+            android:gravity="center"
+            android:id="@+id/textViewTitleDescription"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:background="#454545"
+            android:textStyle="normal"
+            android:layout_alignBottom="@+id/buttonBackDetails"
+            android:layout_alignParentTop="true"/>
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/buttonBackDetails"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/abc_ic_ab_back_holo_dark"/>
+
+
+    <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/buttonSettingsDetailed"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_info_details"/>
+
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/buttonBackDetails"
+            android:layout_alignLeft="@+id/buttonBackDetails"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/abc_ab_solid_dark_holo">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight ="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="17sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewAppDescription"/>
+    </ScrollView>
+
+</RelativeLayout>
